@@ -12,11 +12,11 @@ first form
   City <input type="text" name="city"placeholder="Type your city" required><br>
   Course <input type="text" name="course"placeholder="Type your course name" required><br>
   Interest:<br>
-  Gaming <input type="checkbox" ><br>
-  Travelling <input type="checkbox"  ><br>
-  Reading <input type="checkbox"  ><br>
-  Singing <input type="checkbox"  ><br>
-  <input type="submit" value="Click to Submit">
+  Gaming <input type="checkbox" value="gaming" name="interest"><br>
+  Travelling <input type="checkbox"  value="travelling" name="interest"><br>
+  Reading <input type="checkbox"  value="reading" name="interest"><br>
+  Singing <input type="checkbox"  value="singing" name="interest"><br>
+  <input type="submit" value="Click to Submit"><br>
 </body>
 </html>
 <?php
@@ -24,12 +24,13 @@ $Name=$_POST['name'];
 $email=$_POST['email'];
 $contact=$_POST['contact'];
 $city=$_POST['city'];
-$Course=$_POST['Course'];
+$Course=$_POST['course'];
 $Interest=$_POST['interest'];
-  echo "Name=$name<br>";
+  echo "Name=$Name<br>";
   echo "Email=$email<br>";
   echo "Contact=$contact<br>";
   echo "city=$city<br>";
   echo "Course=$Course<br>";
-  echo "Interest=$interest<br>";
+  echo "Interest=$Interest<br>";
+
  ?> 
